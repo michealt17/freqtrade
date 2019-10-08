@@ -68,7 +68,7 @@ class Backtesting:
         if config.get('fee'):
             self.fee = config['fee']
         else:
-            self.fee = self.exchange.get_fee()
+            self.fee = self.exchange.get_fee('BTC/USD') # Override the default pair (i.e. ETH/BTC) to get fees as it doesn't exist on some exchanges
 
         if self.config.get('runmode') != RunMode.HYPEROPT:
             self.dataprovider = DataProvider(self.config, self.exchange)
