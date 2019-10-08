@@ -12,3 +12,4 @@ from freqtrade.exchange.exchange import (timeframe_to_seconds,  # noqa: F401
                                          timeframe_to_prev_date)
 from freqtrade.exchange.kraken import Kraken  # noqa: F401
 from freqtrade.exchange.binance import Binance  # noqa: F401
+from freqtrade.exchange.coinbasepro import Coinbasepro
